@@ -1,15 +1,83 @@
+/* 
+Mobile-first!
+All CSS outside of a media query
+is designed for mobile (portrait) screen sizes.
+
+Media queries must be used to override that,
+for other screen sizes.
+*/
 * {
 	font-family: Verdana,sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100dvh;
+}
+
+footer {
+	text-align: center;
+	margin-top: auto;
 }
 
 
 
 nav {
 	width: 100dvw;
+	height: 15dvh;
+	background-color: cadetblue;
 	display: flex;
+}
+nav > * {
+	width: 50%;
+	height: 10dvh;
+	margin: 0;
+	padding: 0;
+	background-color: thistle;
 }
 
 #socialfeed {
 	display: flex;
 	flex-direction: column;
+	width: 100dvw;
+	align-items: center;
+	background-color: aliceblue;
+	padding: 5dvw 0 5dvw 0;
+}
+
+.postCard {
+	height: 20dvh;
+	text-align: center;
+	color: white;
+	background-color: slateblue;
+	margin: 5%;
+}
+
+li {
+	list-style-type: none;
+	text-decoration: none;
+}
+
+li > a,
+li > a:link,
+li > a:visited{
+	text-decoration: none;
+}
+
+
+@media screen and (min-width: 992px) {
+	.postCard {
+		background-color: cornsilk;
+		color: black;
+		min-width: 20dvw;
+		margin: 1%;
+	}
+
+	#socialfeed {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
 }
