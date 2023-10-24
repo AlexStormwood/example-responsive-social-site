@@ -54,6 +54,15 @@ nav > * {
 	color: white;
 	background-color: slateblue;
 	margin: 5%;
+	display: flex;
+	flex-direction: column;
+}
+
+.postImage {
+	width: 50%;
+	height: 50%;
+	align-self: center;
+	background-color: brown;
 }
 
 li {
