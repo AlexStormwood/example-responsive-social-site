@@ -1,0 +1,15 @@
+* {
+	font-family: Verdana,sans-serif;
+}
+
+
+
+nav {
+	width: 100dvw;
+	display: flex;
+}
+
+#socialfeed {
+	display: flex;
+	flex-direction: column;
+}
